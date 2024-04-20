@@ -1,0 +1,35 @@
+{
+    "name":"CAPTION",
+    "description":"Download videos from various websites using this telegram bot",
+    "repository":"https://github.com/tiger7815/tecttoovvvv",
+    "buildpacks":[
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        },   
+	{
+            "url": "https://github.com/amivin/aria2-heroku.git"
+        },   
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "env": {
+        "API_ID":{
+            "description": "Get your telegram API ID from https://my.telegram.org",
+            "value":"20319884"
+        },
+        "API_HASH":{
+            "description":"Get your telegram API HASH from https://my.telegram.org",
+		    "value":"637e3ba6357aa3ba2f3bf5742e0fd066"
+        },
+        "BOT_TOKEN":{
+            "description":"Get from BotFather",
+            "value":"6949366970:AAGiu9X6HuNNDzw92OoMN7MXWh1eTP7isEU"
+	},
+        "AUTH_USERS":{
+            "description":"Admin/Owner/Friends ID Seperate by ','  Ex: 44578878,8878899",
+            "value":"1183124209"
+        
+        }
+    }
+}
