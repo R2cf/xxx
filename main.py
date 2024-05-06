@@ -143,7 +143,7 @@ async def restart_handler(_, m):
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
-        await m.reply("**https://telegra.ph/file/ece58d24bb5910b90098f.jpg", quote=True)
+        await m.reply("**https://telegra.ph/file/38ce86dda9d6b3572a6a8.jpg", quote=True)
         return
     else:
         editable = await m.reply_text(
