@@ -11,10 +11,8 @@
 #
 ## Deploy To Heroku
 
-<a href="https://heroku.com/deploy?template=https://github.com/viratvijay143/tigerchenal">
-     <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
-  </a>
 
+[![Deploy to heroku chacha](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/viratvijay143/tigerchenal)
 ### .env
 ```sh
     API_ID=12345 # Get from https://my.telegram.org/apps
