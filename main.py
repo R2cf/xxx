@@ -63,12 +63,12 @@ logging = logging.getLogger()
 
 
 bot = Client("bot",
-             bot_token= "6318111288:AAGq4WYboiTW5mmJpU8cv3zwKACPXGQn0nw",
-             api_id=29403305,
-             api_hash= "54c435573d0f2d9dada270a0cb493b36")
-auth_users = [6833680742]
+             bot_token= "6785937606:AAHYjdnSRdNIy9V1Xr_4YUUDyHiOUPu2HYg",
+             api_id=22626671,
+             api_hash= "4081196bbe59a5d6a7fd786b51230bd9")
+auth_users = [7008538976]
 sudo_users = auth_users
-sudo_groups = [-1002077871846]
+sudo_groups = [-1002238482997]
 
 shell_usage = f"**USAGE:** Executes terminal commands directly via bot.\n\n<pre>/shell pip install requests</pre>"
 def one(user_id):
@@ -139,7 +139,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["Ak47"]))
+@bot.on_message(filters.command(["txt"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
@@ -269,8 +269,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[ 🎬 ] Vid ID :** {str(count).zfill(3)}\n**File Title :** {name1} {res} {MR}.mp4\n**Batch Name :** {raw_text0}\n**Extracted By ➤ **AKKI❤️'
-                cc1 = f'**[ 📕 ] Pdf ID :** {str(count).zfill(3)}\n**File Title :** {name1} {MR}.pdf \n**Batch Name :** {raw_text0}\n**Extracted By ➤ **AKKI❤️'
+                cc = f'**[ 🎬 ] Vid ID :** {str(count).zfill(3)}\n**File Title :** {name1} {res} {MR}.mp4\n**Batch Name :** {raw_text0}\n**Extracted By ➤ **@vijaysahu_2'
+                cc1 = f'**[ 📕 ] Pdf ID :** {str(count).zfill(3)}\n**File Title :** {name1} {MR}.pdf \n**Batch Name :** {raw_text0}\n**Extracted By ➤ **@vijaysahu_2'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
