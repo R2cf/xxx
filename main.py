@@ -63,12 +63,12 @@ logging = logging.getLogger()
 
 
 bot = Client("bot",
-             bot_token= "7061081267:AAH8frAWfGkf0GhU1DZNcW04N6bmzJc5k8k",
+             bot_token= "6498400148:AAGbhfblDSLhQJ0pQMjCrDsEqY3oMUWEKFI",
              api_id=22626671,
              api_hash= "4081196bbe59a5d6a7fd786b51230bd9")
-auth_users = [5498931783]
+auth_users = [6970198165]
 sudo_users = auth_users
-sudo_groups = [-1002116155974]
+sudo_groups = [-1002079135864]
 
 shell_usage = f"**USAGE:** Executes terminal commands directly via bot.\n\n<pre>/shell pip install requests</pre>"
 def one(user_id):
@@ -129,7 +129,7 @@ keyboard = InlineKeyboardMarkup(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT  [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /Ak47")
+    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT  [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /txt")
 
 
 @bot.on_message(filters.command("STOP"))
@@ -269,8 +269,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[ 🎬 ] Vid ID :** {str(count).zfill(3)}\n**File Title :** {name1} {res} {MR}.mp4\n**Batch Name :** {raw_text0}\n**Extracted By ➤ **@vijaysahu_2'
-                cc1 = f'**[ 📕 ] Pdf ID :** {str(count).zfill(3)}\n**File Title :** {name1} {MR}.pdf \n**Batch Name :** {raw_text0}\n**Extracted By ➤ **@vijaysahu_2'
+                cc = f'**[ 🎬 ] Vid ID :** {str(count).zfill(3)}\n**File Title :** {name1} {res} {MR}.mp4\n**Batch Name :** {raw_text0}\n**Extracted By ➤ ** CRAZY GAMER™ ••'
+                cc1 = f'**[ 📕 ] Pdf ID :** {str(count).zfill(3)}\n**File Title :** {name1} {MR}.pdf \n**Batch Name :** {raw_text0}\n**Extracted By ➤ ** CRAZY GAMER™ ••'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
